@@ -10,9 +10,9 @@ for (var l = 0; l < lineas; l++) {
   xf = 10 * (l + 1);
   xf1 = 300 - (l * 10);
   // Inf-Izquierda
-  dibujarLinea("#981919", 0, yi, xf, 300);
+  dibujarLinea("#981818", 0, yi, xf, 300);
   // Inf-Derecha
-  dibujarLinea("#981919", 300, yi, xf1, 300);
+  dibujarLinea("#981818", 300, yi, xf1, 300);
    // Sup-Izquierda
   dibujarLinea("#981818", xf1, 0, 0, xf);
   // Sup-Derecha
