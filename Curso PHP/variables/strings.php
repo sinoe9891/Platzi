@@ -1,4 +1,5 @@
 <?php
+//Cadenas de Caractéres
 //int
 $intVar = 1;
 var_dump($intVar);
