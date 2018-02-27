@@ -7,8 +7,8 @@
   <title>Mi Primer Script</title>
 </head>
 <body>
-	<?php
-		echo "Hola Mundo";
-	?>
+  <?php
+  echo 'Hello World';
+  ?>
 </body>
 </html>
