@@ -47,6 +47,7 @@
     var_dump($nullVar);
     ?>
   </p>
+  <p><b>Esto nos permite definir una variable que no tiene valor.</b></p>
   <p>
     <?php
     // null
