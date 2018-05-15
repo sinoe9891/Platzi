@@ -2,7 +2,11 @@
 
 
 $intVar = 5;
-$stringVar = "Hello " . $intVar;
+$newVar = 6;
+
+$newVar = ' string';
+
+$stringVar = "Hello " . $intVar . $newVar;
 echo $stringVar;
 
 ?>

@@ -6,7 +6,7 @@ $arrayVar = [
 							3 => 'black' . "</p>",
 						];
 
-var_dump($arrayVar['color2']. "</p>");
+var_dump($arrayVar['3']. "</p>");
 
 $array1Var = [
 	3 => 'red',
