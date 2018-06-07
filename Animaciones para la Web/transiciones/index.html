@@ -6,10 +6,23 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Transiciones CSS</title>
   <style>
+    .pelota{
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-color: red;
+      -webkit-transition: 1s;
+      -o-transition: 1s;
+      transition: 1s;
+    }
+    .pelota:hover{
+      width: 200px;
+      height: 200px;
+    }
 
   </style>
 </head>
 <body>
-    <div class="pelota"></div>
+    <div class="pelota b"></div>
 </body>
 </html>
