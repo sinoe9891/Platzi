@@ -1,0 +1,104 @@
+<!-- Las subpropiedades de animation son:
+
+animation-delay
+Tiempo de retardo entre el momento en que el elemento se carga y el comienzo de la secuencia de la animación.
+
+animation-direction
+Indica si la animación debe retroceder hasta el fotograma de inicio al finalizar la secuencia o si debe comenzar desde el principio al llegar al final.
+
+animation-duration
+Indica la cantidad de tiempo que la animación consume en completar su ciclo (duración).
+
+animation-iteration-count
+El número de veces que se repite. Podemos indicar infinite para repetir la animación indefinidamente.
+
+animation-name
+Especifica el nombre de la regla @keyframes que describe los fotogramas de la animación.
+
+animation-play-state
+Permite pausar y reanudar la secuencia de la animación.
+
+animation-timing-function
+Indica el ritmo de la animación, es decir, como se muestran los fotogramas de la animación, estableciendo curvas de aceleración.
+
+animation-fill-mode
+Especifica qué valores tendrán las propiedades después de finalizar la animación (los de antes de ejecutarla, los del último fotograma de la animación o ambos). -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Animaciones</title>
+  <style>
+      body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        color: white;
+        font-family: Arial;
+        /* perspective: 200px; */
+      }
+      .container{
+        border: 1px solid red;
+        width: 100%;
+      }
+      .container:hover .cuadrado{
+        /* animation-play-state: paused; */
+
+      }
+      .cuadrado{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background: #7dc900;
+        margin: 20px;
+        /* transition: .3s; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        animation-name: cuadrado;
+        animation-duration: 1s;
+        /*animation-delay: 1s;*/
+        /*animation-iteration-count: 2;*/
+        animation-iteration-count: infinite;
+        animation-timing-function: ease;
+        /* animation-timing-function: ease-in; */
+        /* animation-timing-function: ease-out; */
+        /* animation-timing-function: ease-in-out; */
+        /* animation-timing-function: linear; */
+        /*animation-timing-function: cubic-bezier(1, 1,1 ,1);*/
+        /* animation-direction: reverse; */
+        animation-direction: alternate;
+        /* animation-fill-mode: forwards; */
+        /* Puede Ser también */
+        /* opacity: 0; */
+        /* animation-play-state: running;
+        animation-play-state: paused; */
+
+        position: relative;
+      }
+      @keyframes cuadrado {
+        0%{
+          /* opacity: 1; */
+          left: 0;
+        }
+        100%{
+          /* opacity: 0; */
+          /* left: 100%; */
+          left: calc(100% - 240px); /* el ancho son 204 porque tiene margenes ancho=200 + 20 margenes *2 */
+        }
+      }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="cuadrado">
+        Hola Mundo!
+    </div>
+  </div>
+</body>
+</html>
