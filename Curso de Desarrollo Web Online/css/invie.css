@@ -1,6 +1,17 @@
+*{
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid red;
+}
+body{
+  font-family: 'Allert', sans-serif;
+}
+
 .titulo {
+  font-family: 'Montserrat', sans-serif;
   font-size: 70px;
 }
+
 .title-a {
   font-size: 24px;
 }
@@ -9,10 +20,24 @@
   font-size: 50px;
 }
 
+.guitarras{
+  color: #1F313C;
+}
+
 .guitarras h2 {
   font-size: 35px;
 }
 
+.menu{
+  font-size: 24px;
+}
+
 .portada{
   background-image: url("../images/background.png");
+  color: white;
+}
+
+/* inline-block */
+.menu, .logotipo, .menu li{
+  display: inline-block;
 }
