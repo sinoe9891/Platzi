@@ -1,45 +1,18 @@
-body{
-  background-color: peru;
+.titulo {
+  font-size: 70px;
+}
+.title-a {
+  font-size: 24px;
 }
 
-/* selector universal */
-* {
-  border: 1px solid red;
-  margin: 10px;
+.title-b {
+  font-size: 50px;
 }
 
-/* selector de etiqueta */
-header{
-  background: blue;
-  }
-
-section{
-  background: purple;
+.guitarras h2 {
+  font-size: 35px;
 }
 
-/* selector descendente */
-
-article h3{
-  color: green;
-}
-
-/* selectores de clase */
-.title-a{
-  background-color: yellow;
-}
-
-.title-b{
-  background-color: salmon;
-}
-
-/* selectores id */
-#header {
-  border: 3px solid black;
-}
-#guitarra{
-  border: 3px solid orange;
-}
-
-#portada{
-  border: 3px solid brown;
+.portada{
+  background-image: url("../images/background.png");
 }
