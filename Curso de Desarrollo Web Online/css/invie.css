@@ -22,14 +22,22 @@ body{
 
 .title-b {
   font-size: 50px;
-  margin-bottom: 0px;
+  margin-bottom: 20px;
 }
 
 .guitarras{
   color: #1F313C;
 }
 
+.derecha{
+  float:right;
+}
+
+.izquierda{
+  float:right;
+}
 .guitarras h2 {
+  font-family: 'Montserrat', sans-serif;
   font-size: 35px;
 }
 
@@ -37,6 +45,7 @@ body{
   background-image: url("../images/background.png");
   color: white;
   padding: 20px;
+
 }
 
 .portada button {
@@ -55,4 +64,9 @@ body{
 
 .logotipo{
   display: inline-block;
+}
+
+.contenedor {
+  width: 800px;
+  margin: auto;
 }
