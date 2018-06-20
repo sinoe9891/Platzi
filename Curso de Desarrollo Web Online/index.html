@@ -66,6 +66,49 @@
     </article>
 
   </section>
+  <footer class="footer">
+    <div class="contenedor">
+      <div class="contacto">
+        <img src="images/invie-white.png" alt="logotipo-blanco"/>
+        <a href="tel:+57302445667"><strong>Teléfono</strong> <span>3024456678</span></a>
+        <a href="mailto:contacto@invie.com"><strong>E-mail</strong> <span>contacto@invie.com</span></a>
+      </div>
+
+      <form class="formulario" action="index.html" method="post">
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre" required />
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="email" required />
+        <div class="sexo">
+          <label for="Mujer">
+            <input type="radio" name="sexo" value="mujer">Mujer
+          </label>
+          <label for="Hombre">
+            <input type="radio" name="sexo" value="hombre">Hombre
+          </label>
+        </div>
+        <div class="intereses">
+          <label for="cotizacion">
+            <input type="checkbox" name="cotizacion" id="cotizacion" value="cotizacion">Cotización
+          </label>
+          <label for="reclamos">
+            <input type="checkbox" name="reclamos" id="reclamos" value="reclamos">Reclamos
+          </label>
+          <label for="comentarios">
+            <input type="checkbox" name="comentarios" id="comentarios" value="comentarios">Comentarios
+          </label>
+          <label for="otros">
+            <input type="checkbox" name="otros" id="otros" value="otros">Otros
+          </label>
+        </div>
+        <div>
+          <label for="comentarios">Comentarios</label>
+          <textarea name="comentarios" id="comentarios" rows="7" cols="30"></textarea>
+          <input type="submit" name="" value="Enviar">
+        </div>
+      </form>
+    </div>
+  </footer>
 
 </body>
 </html>

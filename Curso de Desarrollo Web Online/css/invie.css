@@ -44,10 +44,24 @@ body{
 .portada button {
   margin-bottom: 70px;
 }
+
+button {
+  border-radius: 8px;
+  border: none;
+  background:linear-gradient(to right,#ff7250,#fe344e);
+  color: white;
+  padding: 7px;
+}
 /* inline-block */
 .menu{
   font-size: 24px;
   display: inline-block;
+  position: absolute;
+  right: 0px;
+}
+
+.header{
+  position: relative;
 }
 
 .menu li{
@@ -67,15 +81,22 @@ body{
 .guitarra {
   margin: 10px;
   padding: 10px;
-  overflow: hidden;
+  /* overflow: hidden; */
   border: 1px solid #1F313C;
+  position: relative;
+  border-radius: 8px;
 }
+
 .derecha{
   float:right;
+  position: relative;
+  top: -153px;
 }
 
 .izquierda{
   float:left;
+  position: relative;
+  top: 80px;
 }
 
 .guitarra ol {
@@ -86,4 +107,22 @@ body{
 }
 .contenedor-guitarra-b {
   margin-left: 370px;
+}
+
+/* footer */
+.footer{
+  background: #273b47;
+}
+
+.contacto img{
+  display: block;
+}
+
+.contacto strong{
+  display: block;
+}
+
+.contacto a{
+  color: white;
+  text-decoration: none;
 }
