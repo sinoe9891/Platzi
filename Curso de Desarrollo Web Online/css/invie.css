@@ -207,9 +207,9 @@ input:focus, textarea:focus{
   color: white;
 }
 
-.formulario label, .sexo, .intereses{
-  margin-bottom: 5px;
-  padding-top: 5px;
+.formulario label, .sexo, .intereses .email{
+  margin-bottom: 8px;
+  padding-top: 8px;
   }
 
 .col1, .col2{
@@ -232,8 +232,6 @@ input:focus, textarea:focus{
 .intereses label{
   font-size: 11px;
 }
-
-
 
 .sexo {
   margin-top: 15px;
