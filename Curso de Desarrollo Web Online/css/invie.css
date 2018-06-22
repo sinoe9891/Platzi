@@ -8,11 +8,42 @@ body{
   margin: 0;
 }
 
+table{
+  width: 100%;
+
+}
+
+th {
+  background: #273b47;
+  color: white;
+  text-align: left;
+}
+
+th {
+  padding: 10px 20px;
+}
+td {
+  padding: 20px;
+}
+
+table, td, th{
+  border: 1px solid  #273b47;
+  border-collapse: collapse;
+}
+.contenedor {
+  width: 800px;
+  margin: auto;
+}
+
 .titulo {
   font-family: 'Montserrat', sans-serif;
   font-size: 70px;
   margin-bottom: 0px;
   margin-top: 70px;
+}
+
+.titulo span{
+  text-decoration: underline;
 }
 
 .title-a {
@@ -38,6 +69,8 @@ body{
   background-image: url("../images/background.png");
   color: white;
   padding: 20px;
+  height: 500px
+  background-size: cover;
 
 }
 
@@ -45,12 +78,15 @@ body{
   margin-bottom: 70px;
 }
 
-button {
-  border-radius: 8px;
+.button {
+  border-radius: 12px;
   border: none;
   background:linear-gradient(to right,#ff7250,#fe344e);
   color: white;
-  padding: 7px;
+  cursor: pointer;
+  padding: 7px 12px;
+  font-size: 18px;
+  text-decoration: none;
 }
 /* inline-block */
 .menu{
@@ -68,18 +104,26 @@ button {
   display: inline-block;
   margin-left: 30px;
 }
+.menu li:before {
+    content: '∘';
+    font-size: 20px;
+    line-height: 20px;
+    color: white;
+}
+.menu a{
+  color: white;
+  text-decoration: none;
+}
 
 .logotipo{
   display: inline-block;
+  margin-left: 0;
 }
 
-.contenedor {
-  width: 800px;
-  margin: auto;
-}
+
 
 .guitarra {
-  margin: 10px;
+  margin: 10px 10px 40px 10px;
   padding: 10px;
   /* overflow: hidden; */
   border: 1px solid #1F313C;
@@ -90,28 +134,33 @@ button {
 .derecha{
   float:right;
   position: relative;
-  top: -153px;
+  top: -138px;
 }
 
 .izquierda{
   float:left;
   position: relative;
-  top: 80px;
 }
 
 .guitarra ol {
   padding: 0;
+}
+.guitarra.b{
+  height: 190px;
 }
 .contenedor-guitarra-a {
   padding-left: 20px;
 }
 .contenedor-guitarra-b {
   margin-left: 370px;
+  position: relative;
+  bottom: 90px;
 }
 
 /* footer */
 .footer{
   background: #273b47;
+  padding: 50px 10px;
 }
 
 .contacto img{
@@ -125,4 +174,61 @@ button {
 .contacto a{
   color: white;
   text-decoration: none;
+  margin: 10px 10px 10px 0px;
+}
+/* display flex */
+.footer .contenedor {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacto {
+  display:flex;
+  width: 300px;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 200px;
+
+}
+
+.formulario {
+  display: flex;
+  width: 400px;
+  color: white;
+}
+
+input, textarea{
+  outline: 0;
+}
+
+input:focus, textarea:focus{
+  background: lightgrey;
+}
+
+.col1, .col2{
+  display: flex;
+  flex-direction: column;
+}
+
+.col1{
+  margin-right: 15px;
+}
+
+.col2{
+  align-items: flex-start;
+
+}
+.col2 .button{
+  margin-top: 15px;
+}
+.intereses label{
+  font-size: 11px;
+}
+
+.formulario label, .sexo, .intereses{
+  margin-bottom: 15px;
+  }
+
+.sexo {
+  margin-top: 15px;
 }
