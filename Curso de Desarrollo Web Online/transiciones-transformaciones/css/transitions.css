@@ -1,4 +1,6 @@
-/*background-color
+/*
+transition-property:
+background-color
 background-position
 background-size
 border-color
@@ -22,11 +24,11 @@ body {
 }
 
 .transicion {
-  transition: .3s;
-  /*transition: .3s opacity ease;*/
-/*  transition-duration: .3s;
-  transition-property: opacity;
-  transition-timing-function: ease;*/
+transition: .3s;
+  /* transition-duration: .3s; */
+  /* transition-property: opacity; */
+  /* transition-timing-function: ; */
+
 }
 
 .caja {
@@ -35,7 +37,7 @@ body {
   border: 1px solid red;
 }
 
-.opacity {
+.opacity{
   opacity: 0;
 }
 
@@ -43,16 +45,19 @@ body {
   opacity: 1;
 }
 
-.fuente:hover {
+.fuente:hover{
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 600
 }
 
-.colores:hover {
-  color: red;
+.colores:hover{
+  color:red;
   background: yellow;
 }
 
+
+
+/* 
 .rotacion:hover {
   transform: rotate(360deg);
 }
@@ -73,4 +78,4 @@ body {
 
 .mixtas:hover {
   transform: rotate(45deg) scale(2) skew(45deg) translateX(50px);
-}
+} */
