@@ -207,6 +207,10 @@ input:focus, textarea:focus{
   color: white;
 }
 
+.formulario label, .sexo, .intereses{
+  margin-bottom: 5px;
+  padding-top: 5px;
+  }
 
 .col1, .col2{
   display: flex;
@@ -217,20 +221,19 @@ input:focus, textarea:focus{
   margin-right: 15px;
 }
 
+
 .col2{
   align-items: flex-start;
 
 }
 .col2 .button{
-  margin-top: 15px;
+  margin-top: px;
 }
 .intereses label{
   font-size: 11px;
 }
 
-.formulario label, .sexo, .intereses{
-  margin-bottom: 15px;
-  }
+
 
 .sexo {
   margin-top: 15px;
