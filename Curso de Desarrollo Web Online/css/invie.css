@@ -30,9 +30,22 @@ table, td, th{
   border: 1px solid  #273b47;
   border-collapse: collapse;
 }
+input, textarea{
+  outline: 0;
+}
+
+input:focus, textarea:focus{
+  background: lightgrey;
+}
+
+.background{
+  background-image: url("../images/background.png");
+  background-size: cover;
+}
 .contenedor {
   width: 800px;
   margin: auto;
+  position: relative;
 }
 
 .titulo {
@@ -66,12 +79,9 @@ table, td, th{
 }
 
 .portada{
-  background-image: url("../images/background.png");
   color: white;
   padding: 20px;
   height: 500px
-  background-size: cover;
-
 }
 
 .portada button {
@@ -197,13 +207,6 @@ table, td, th{
   color: white;
 }
 
-input, textarea{
-  outline: 0;
-}
-
-input:focus, textarea:focus{
-  background: lightgrey;
-}
 
 .col1, .col2{
   display: flex;
@@ -231,4 +234,8 @@ input:focus, textarea:focus{
 
 .sexo {
   margin-top: 15px;
+}
+
+.tabla{
+  margin: 50px 0px;
 }
