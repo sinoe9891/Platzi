@@ -24,11 +24,10 @@ body {
 }
 
 .transicion {
-transition: .3s;
+  transition: .3s;
   /* transition-duration: .3s; */
   /* transition-property: opacity; */
   /* transition-timing-function: ; */
-
 }
 
 .caja {
@@ -55,27 +54,26 @@ transition: .3s;
   background: yellow;
 }
 
-
-
-/*
 .rotacion:hover {
-  transform: rotate(360deg);
+  transform: rotateX(360deg);
 }
 
-.escala:hover {
+.escala:hover{
   transform: scale(2);
 }
-
-.sesgado:hover {
+.sesgado:hover{
   transform: skew(45deg);
 }
-body {
+body{
   perspective: 1000px;
 }
-.traslacion:hover {
-  transform: translateZ(50px);
+.traslacion:hover{
+  transform: translate(50px);
+/* transform: translateX(50px); */
+/* transform: translateY(50px); */
+/* transform: translateZ(50px); */
 }
 
 .mixtas:hover {
   transform: rotate(45deg) scale(2) skew(45deg) translateX(50px);
-} */
+}

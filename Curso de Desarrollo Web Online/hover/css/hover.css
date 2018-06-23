@@ -1,0 +1,11 @@
+body{
+  background: peru;
+  font-family: verdana;
+}
+
+.post{
+  border: 10px solid red;
+  background: #fff;
+  padding: 20px;
+  text-align: center;
+}
