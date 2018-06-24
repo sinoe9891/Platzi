@@ -8,4 +8,29 @@ body{
   background: #fff;
   padding: 20px;
   text-align: center;
+  transition: .3s;
+  overflow: hidden;
+}
+
+.post:hover{
+  background:skyblue;
+}
+
+img, p {
+  transition: .3s;
+}
+
+.post img {
+  transform: translateY(-300px);
+}
+
+.post:hover img{
+  transform: scale(1.2);
+}
+
+.post p {
+  transform: translateY(100px);
+}
+.post:hover p{
+  transform: translateY(0);
 }

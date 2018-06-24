@@ -1,0 +1,89 @@
+body{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+/* Logo y nav */
+header {
+  background: #234458;
+  /* height: 50px; */
+  /* padding-left: 10px; */
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  /* background: #234458; */
+  /* float: right; */
+  /* position: absolute; */
+  /* right: 0;  */
+}
+
+nav ul{
+  display: flex;
+}
+
+nav li {
+  list-style: none;
+  /* margin: 0 10px; */
+  color: white;
+}
+
+/* Pseudo Clase */
+nav li:after {
+  content: "|";
+  display: inline-block;
+  margin: 0 10px;
+}
+
+/* Pseudo Clase */
+nav li:last-child:after{
+  display:none;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  /* border-top: 10px solid red; */
+}
+
+.portada {
+  /* border: 10px solid ; */
+  /* overflow: hidden; */
+  position: relative;
+}
+
+.blog {
+  width: 1000px;
+  margin: auto;
+}
+
+.portada .description {
+  background: rgba(255, 255, 255, .5);
+  /* opacity: .5; */
+  padding: 20px;
+  position: absolute;
+  bottom: 30px;
+  left: 20px;
+}
+
+h1{
+  margin: 0;
+  font-weight: 600;
+}
+
+.blog-items h3{
+  font-weight:600;
+  margin: 10px;
+}
+.blog-items{
+  display:flex;
+  justify-content: space-between;
+  /* justify-content: space-around; */
+  flex-wrap: wrap;
+}
+
+.item-blog{
+  width: 300px;
+}
