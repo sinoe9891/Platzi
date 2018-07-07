@@ -1,0 +1,28 @@
+.container{
+  height: 200vh;
+  width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.iphone{
+  display: inline-block;
+  /* margin-top: 150px; */
+  border: 1px solid red;
+  position: relative;
+  transition: .1s;
+}
+
+.shape{
+  background-image: url(https://www.byepioclin.hn/wp-content/uploads/2018/06/Mockup-Web-PIO-14-1.png);
+  width: 263px;
+  height: 263px;
+  position: absolute;
+  top:75px;
+  right: -90px;
+  background-position: -54px;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* -webkit-mask-image:url(img/apple-mask.png);
+  mask-image:url(img/apple-mask.png); */
+}

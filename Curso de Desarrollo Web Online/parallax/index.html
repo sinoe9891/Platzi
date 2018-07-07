@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css.css">
+  <title>Parallax</title>
+</head>
+<body>
+  <section class="container">
+    <figure class="iphone" id="iphone">
+      <img src="img/iphone.jpg" alt="">
+      <div class="shape" id="mask"></div>
+    </figure>
+  </section>
+  <script type="text/javascript">
+  // declarar variable y detectar el ID
+    const $iphone = document.getElementById('iphone');
+    const $mask = document.getElementById('mask');
+
+    window.addEventListener('scroll',function(e){
+      console.log(window.scrollY);
+      // $iphone.style.marginTop = window.scrollY + 'px'
+      var position = 54 + window.scrollY;
+      $mask.style.backgroundPosition = '-' + window.scrollY + 'px';
+      // var transform = -45 + window.scrollY;
+      $iphone.style.transform = 'rotate(-'+ position*0.02 + 'deg)'
+    })
+  </script>
+</body>
+</html>
