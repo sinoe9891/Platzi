@@ -280,6 +280,8 @@ input:focus, textarea:focus{
   line-height: 40px;
   border-radius: 50%;
   background: #395667;
+  display: inline-block;
+  text-align: center;
 }
 @media screen and (max-width: 800px){
   /* body{
