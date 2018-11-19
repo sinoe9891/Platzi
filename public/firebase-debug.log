@@ -1,0 +1,37 @@
+[debug] [2018-07-31T14:10:28.820Z] ----------------------------------------------------------------------
+[debug] [2018-07-31T14:10:28.821Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve -p 5000 -o 127.0.0.1
+[debug] [2018-07-31T14:10:28.821Z] CLI Version:   4.0.1
+[debug] [2018-07-31T14:10:28.821Z] Platform:      darwin
+[debug] [2018-07-31T14:10:28.821Z] Node Version:  v8.4.0
+[debug] [2018-07-31T14:10:28.822Z] Time:          Tue Jul 31 2018 08:10:28 GMT-0600 (CST)
+[debug] [2018-07-31T14:10:28.822Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-07-31T14:10:28.829Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-07-31T14:10:28.829Z] > authorizing via signed-in user
+[debug] [2018-07-31T14:10:28.831Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/platzi-invie-8742b  
+  
+ Tue Jul 31 2018 08:10:28 GMT-0600 (CST)
+[debug] [2018-07-31T14:10:29.324Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-31T14:10:29.325Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/platzi-invie-8742b/tokens  
+  
+ Tue Jul 31 2018 08:10:29 GMT-0600 (CST)
+[debug] [2018-07-31T14:10:32.937Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-31T14:10:32.937Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/platzi-invie-8742b  
+  
+ Tue Jul 31 2018 08:10:32 GMT-0600 (CST)
+[debug] [2018-07-31T14:10:33.281Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Applications/XAMPP/xamppfiles/htdocs/GitHub/Platzi/public'...
+[info] 
+[debug] [2018-07-31T14:10:33.282Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/282351437152/clients/_:getWebAppConfig  
+  
+ Tue Jul 31 2018 08:10:33 GMT-0600 (CST)
+[debug] [2018-07-31T14:10:33.833Z] <<< HTTP RESPONSE 200
+[warn] ⚠  hosting: Port 5000 is not available. Trying another port...
+[debug] [2018-07-31T14:10:33.842Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/282351437152/clients/_:getWebAppConfig  
+  
+ Tue Jul 31 2018 08:10:33 GMT-0600 (CST)
+[debug] [2018-07-31T14:10:34.273Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: ./
+[info] ✔  hosting: Local server: http://127.0.0.1:5004
+
