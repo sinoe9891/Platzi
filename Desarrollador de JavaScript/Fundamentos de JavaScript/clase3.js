@@ -47,4 +47,5 @@ var personas = 2
 
 var cantidadporcionesporpersona = pizza / personas
 
+
 console.log('Tocan ' + `${cantidadporcionesporpersona}` + ' por persona')
