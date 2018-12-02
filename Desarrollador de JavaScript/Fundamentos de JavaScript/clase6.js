@@ -30,21 +30,21 @@ var universidad = {
         ubicacion: 'San Antonio de Oriente',
         Fundación: 1942
     }
-    //     // esta es una variable local que no afecta la variable global
-    // function imprimirMayuscula(lafuncionreutilizable) {
-    //     lafuncionreutilizable = lafuncionreutilizable.toUpperCase();
-    //     console.log(lafuncionreutilizable)
-    // }
-    // 
-    // imprimirMayuscula(danny.apellido)
-    // imprimirMayuscula(andrea.apellido)
-    // imprimirMayuscula(universidad.ubicacion)
-    // imprimirMayuscula('La Universidad ' + universidad.nombre + ' Esta Ubicada en ' + universidad.ubicacion)
-    //     // Resultado:
-    //     // VELASQUEZ 
-    //     // REYES 
-    //     // SAN ANTONIO DE ORIENTE
-    //     // LA UNIVERSIDAD ZAMORANO ESTA UBICADA EN SAN ANTONIO DE ORIENTE
+    // esta es una variable local que no afecta la variable global
+function imprimirMayuscula(person) {
+    person = person.toUpperCase();
+    console.log(person)
+}
+
+imprimirMayuscula(danny.apellido)
+imprimirMayuscula(andrea.apellido)
+imprimirMayuscula(universidad.ubicacion)
+imprimirMayuscula('La Universidad ' + universidad.nombre + ' Esta Ubicada en ' + universidad.ubicacion)
+    // Resultado:
+    // VELASQUEZ 
+    // REYES 
+    // SAN ANTONIO DE ORIENTE
+    // LA UNIVERSIDAD ZAMORANO ESTA UBICADA EN SAN ANTONIO DE ORIENTE
 
 // ////////------------Ejemplo 2-----
 
@@ -70,11 +70,11 @@ var universidad = {
 // ////////------------Ejemplo 4-----
 
 // esta es una variable local que no afecta la variable global
-function imprimirMayuscula({ nombre }) {
-    console.log(nombre.toUpperCase())
-}
+// function imprimirMayuscula({ nombre }) {
+//     console.log(nombre.toUpperCase())
+// }
 
-imprimirMayuscula(danny)
-imprimirMayuscula(andrea)
-imprimirMayuscula(universidad)
-imprimirMayuscula({ nombre: 'eap' })
+// imprimirMayuscula(danny)
+// imprimirMayuscula(andrea)
+// imprimirMayuscula(universidad)
+// imprimirMayuscula({ nombre: 'eap' })
