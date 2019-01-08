@@ -1,3 +1,4 @@
+// variable global
 var nombre = 'Danny'
 
 function imprimirMayuscula() {
