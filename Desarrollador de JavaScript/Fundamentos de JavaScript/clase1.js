@@ -1,4 +1,5 @@
 // Ejemplo 1
+// Console.log() es para imprimir en la consola
 // console.log('Hola Mundo JS!')
 // var nombre
 // nombre = 'Danny'
