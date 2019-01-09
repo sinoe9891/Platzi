@@ -3,27 +3,29 @@ var nombre = 'Danny'
 
 function imprimirMayuscula() {
     nombre = nombre.toUpperCase()
-        //console.log(nombre)
+    console.log(nombre)
+        // document.getElementById("boton").innerHTML = nombre.toUpperCase();
+}
+
+imprimirMayuscula()
+
+// Variable Local - se modifica la variable global dentro del cuerpo de la funcion.
+function imprimirMinuscula(n) {
+    n = n.toLowerCase()
+    console.log(n)
+}
+imprimirMinuscula(nombre)
+
+function imprimirMinusculas(nombreM) {
+    nombreM = nombreM.toLowerCase()
+    console.log(nombreM)
+}
+imprimirMinusculas(nombre)
+
+// Ejemplo de mostrar string en al hacer click en un botonvar nombre = 'Danny'
+
+function clickString() {
+    nombre = nombre.toUpperCase()
+    console.log(nombre)
     document.getElementById("boton").innerHTML = nombre.toUpperCase();
 }
-// imprimirMayuscula()
-
-
-// var nombre = 'Danny'
-
-// function imprimirMayuscula(nombre) {
-//     nombre = nombre.toUpperCase()
-//     console.log(nombre)
-// }
-// imprimirMayuscula(nombre)
-
-
-
-// var nombre = 'Danny'
-
-// function imprimirMayuscula(n) {
-//     n = nombre.toUpperCase()
-//     console.log(nombre)
-//         // document.getElementById("boton").innerHTML = nombre.toUpperCase();
-// }
-// imprimirMayuscula(nombre)
