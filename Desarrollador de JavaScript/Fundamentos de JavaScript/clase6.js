@@ -1,3 +1,4 @@
+// Se podría trabajar así pero no es la mejor manera
 // var nombredanny = 'Danny'
 // var nombreleo = 'Leo'
 // var nombrelaura = 'Laura'
@@ -31,23 +32,26 @@ var universidad = {
         Fundación: 1942
     }
     // esta es una variable local que no afecta la variable global
-function imprimirMayuscula(person) {
-    person = person.toUpperCase();
-    console.log(person)
+function imprimirMayuscula(personvarLocal) {
+    personvarLocal = personvarLocal.toUpperCase();
+    console.log(personvarLocal)
 }
 
 imprimirMayuscula(danny.apellido)
 imprimirMayuscula(andrea.apellido)
 imprimirMayuscula(universidad.ubicacion)
 imprimirMayuscula('La Universidad ' + universidad.nombre + ' Esta Ubicada en ' + universidad.ubicacion)
-    // Resultado:
-    // VELASQUEZ 
-    // REYES 
-    // SAN ANTONIO DE ORIENTE
-    // LA UNIVERSIDAD ZAMORANO ESTA UBICADA EN SAN ANTONIO DE ORIENTE
 
-////////------------Ejemplo 2-----------------------------------------
+imprimirMayuscula(`La Universidad ${universidad.nombre} Esta ubicada en ${universidad.ubicacion}, Francisco Morazan, Honduras.`)
+Resultado:
+    VELASQUEZ
+REYES
+SAN ANTONIO DE ORIENTE
+LA UNIVERSIDAD ZAMORANO ESTA UBICADA EN SAN ANTONIO DE ORIENTE
+LA UNIVERSIDAD ZAMORANO ESTA UBICADA EN SAN ANTONIO DE ORIENTE
 
+//////-------Ejemplo 2-----------
+Ejemplo para recibir el objeto de la persona
 // esta es una variable local que no afecta la variable global
 function imprimirMayuscula(persona) {
     var atributo1 = persona.nombre.toUpperCase();
@@ -58,7 +62,7 @@ imprimirMayuscula(danny)
 imprimirMayuscula(andrea)
     // Resultado: ANDREA
 
-////////------------Ejemplo 3-----------------------------------------
+////////-------Ejemplo 3-----------------------------------------
 
 // esta es una variable local que no afecta la variable global
 function imprimirMayuscula(persona) {
@@ -68,13 +72,12 @@ function imprimirMayuscula(persona) {
 imprimirMayuscula(danny)
 imprimirMayuscula(andrea)
 
-////////------------Ejemplo 5-----------------------------------------
+////////------Ejemplo 5-----------------------------------------
 
 // esta es una variable local que no afecta la variable global
 function imprimirMayuscula({ nombre }) {
     console.log(nombre.toUpperCase())
 }
-
 imprimirMayuscula(danny)
 imprimirMayuscula(andrea)
 imprimirMayuscula(universidad)

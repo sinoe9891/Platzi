@@ -29,3 +29,4 @@ function clickString() {
     console.log(nombre)
     document.getElementById("boton").innerHTML = nombre.toUpperCase();
 }
+// no se necesita ejecutar la función ya que se ejecutará al hacer click en el boton
