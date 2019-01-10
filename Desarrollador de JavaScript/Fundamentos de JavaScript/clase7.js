@@ -4,7 +4,7 @@ var danny = {
     // nombre es key o llave y danny es valor
     nombre: 'Danny',
     apellido: 'Velasquez',
-    edad: 29,
+    edad: 29.5,
     universidad: 'ZAMORANO'
 }
 
@@ -23,22 +23,29 @@ var universidad = {
 }
 
 // // ////////------------Ejercicio1-------------
-function imprimirNombreYEdad(persona) {
-    var nombre = persona.nombre
-    var edad = persona.edad
-    var universidad = persona.universidad
-    console.log('Hola, me llamo ' + nombre.toUpperCase() + ' y tengo ' + edad + ' y trabajo en la universidad ' + universidad)
+function imprimirNombreInformarcion(varLocal) {
+    var nombre = varLocal.nombre
+    var edad = varLocal.edad
+    var universidad = varLocal.universidad
+    console.log(`Ejemplo1- Hola, me llamo ${nombre.toUpperCase()}  y tengo ${edad} y trabajo en la universidad Panamericana ${universidad}`)
 }
 
-////////------------Ejercicio2-------------
-function imprimirNombreYEdad(persona) {
-    var { nombre, edad, universidad } = persona
-    console.log(`Hola, me llamo ${nombre.toUpperCase()} y tengo ${edad} años y trabajo en la universidad ${universidad.toUpperCase()}`)
+imprimirNombreInformarcion(danny)
+    // De esta forma destructuramos los objetos en una sola línea
+    //////------------Ejercicio2-------------
+function imprimirNombreYEdad(varLocal) {
+    var { nombre, edad, universidad } = varLocal
+    console.log(nombre, edad)
+        // console.log(nombre.toUpperCase(), edad.toFixed(0))
+        // console.log(`Ejemplo2- Hola, me llamo ${nombre.toUpperCase()} y tengo ${edad} años y trabajo en la Escuela Agrícola Panamericana ${universidad.toUpperCase()}`)
 }
-
-//////------------Ejercicio3-------------
-function imprimirNombreYEdad({ nombre, edad, universidad }) {
-    console.log(`Hola, me llamo ${nombre.toUpperCase()} y tengo ${edad} años y trabajo en la universidad ${universidad.toUpperCase()}`)
-}
-
 imprimirNombreYEdad(danny)
+    // Este es otro ejemplo de destructurar objetos
+    ////------------Ejercicio3-------------
+function imprimirNombreYEdad1({ nombre, edad, universidad }) {
+    console.log(`Hola, me llamo ${nombre.toUpperCase()} y tengo ${edad} años y trabajo en la universidad ${universidad.toUpperCase()}`)
+}
+imprimirNombreYEdad1(danny)
+
+
+// Reto
