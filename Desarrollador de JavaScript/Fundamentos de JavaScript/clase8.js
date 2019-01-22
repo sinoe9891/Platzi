@@ -28,7 +28,7 @@ console.log(imprimirNombreYEdad(danny))
 function cumpleanos(varLocal) {
     return { //retornar de esta funcion un objeto copiando todo del objeto anterior con ...varLocal, desglosamos a la varLocal dentro de este nuevo objeto pero podemos pisar sus atributos
         ...varLocal, //
-        edad: varLocal.edad + 1
+        edad: varLocal.edad + 1 //podemos modificar la edad
     }
 }
 console.log(cumpleanos(danny))
@@ -43,7 +43,6 @@ console.log(cumpleanos(danny))
     // Resultado: {nombre: "Danny", apellido: "Velasquez", edad: 30, universidad: "ZAMORANO"}
     // danny
     // Resultado: {nombre: "Danny", apellido: "Velasquez", edad: 29, universidad: "ZAMORANO"}
-
 
 // Ejemplo 3
 
