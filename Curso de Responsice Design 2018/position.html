@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* Tipos de Positions
+static
+relative
+absolute
+fixed
+sticky*/
+        /* Al utilizar utilizar uno de los siguientes:
+relative
+absolute
+fixed
+sticky
+valores se activan:
+top, bottom,left, rigth y z-index*/
+        
+        p {
+            font-size: 3em;
+            background: red;
+            display: inline-block;
+            /*   display:inline-block es para reducir el espacio en linea */
+            /*   position:relative */
+        }
+        
+        .section {
+            height: 200px;
+            background: lightgray;
+            margin: 10px 0;
+            border: 1px solid red;
+        }
+        
+        .section-absolute {
+            height: 200px;
+            background: lightgray;
+            margin: 10px 0;
+            border: 1px solid red;
+        }
+        
+        .section-absolute1 {
+            height: 200px;
+            background: lightgray;
+            margin: 10px 0;
+            border: 1px solid red;
+            position: relative;
+        }
+        /* Relative */
+        
+        #section-relative p span {
+            position: relative;
+            right: -20px;
+            top: -40px;
+            background: blue;
+        }
+        
+        #section-absolute p span {
+            position: absolute;
+            right: -20px;
+            background: blue;
+        }
+        
+        #section-absolute1 p span {
+            position: absolute;
+            right: 0;
+            background: blue;
+        }
+        
+        .section-z-index {
+            height: 200px;
+            background: lightgray;
+            margin: 10px 0;
+            border: 1px solid red;
+            position: relative;
+            /*   display: inline-block; */
+        }
+        
+        #section-z-index p span {
+            position: absolute;
+            /*   top:0; */
+        }
+        
+        .mundo {
+            background: pink;
+            z-index: 1;
+        }
+        
+        .responsive {
+            background: yellow;
+            z-index: 0;
+        }
+        
+        .section-fixed {
+            height: 200px;
+            background: lightgray;
+            margin: 10px 0;
+            border: 1px solid red;
+            position: relative;
+            /*   display: inline-block; */
+        }
+        
+        #section-fixed p span {
+            position: fixed;
+            bottom: 0;
+            background: brown;
+            /*   top:0; */
+        }
+        
+        .section-sticky {
+            height: 200px;
+            background: lightgray;
+            margin: 10px 0;
+            border: 1px solid red;
+            position: relative;
+            /*   display: inline-block; */
+        }
+        
+        #section-sticky p span {
+            position: sticky;
+            top: 0;
+            background: grey;
+            /*   top:0; */
+        }
+        
+        .sticky {
+            position: sticky;
+            top: 0;
+            background: rgba(0, 0, 0, .5);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="section-relative" class="section">
+        <p>Hola <span>Mundo</span> Position Relativa</p>
+    </div>
+
+
+    <div id="section-absolute" class="section-absolute">
+        <p>Hola <span>Mundo</span> Position Absoluta</p>
+    </div>
+
+    <div id="section-sticky" class="section-sticky sticky">
+        <p>Hola <span class="mundo">Mundo</span>
+            <span class="responsive">Position Sticky</span></p>
+    </div>
+
+    <div id="section-absolute1" class="section-absolute1">
+        <p>Hola <span>Mundo</span> Position Absoluta1</p>
+    </div>
+
+    <div id="section-z-index" class="section-z-index">
+        <p>Hola <span class="mundo">Mundo</span>
+            <span class="responsive">Position Z-Index</span></p>
+    </div>
+
+
+
+    <div id="section-fixed" class="section-fixed">
+        <p>Hola <span>Mundo</span> Position Fixed</p>
+    </div>
+</body>
+
+</html>
