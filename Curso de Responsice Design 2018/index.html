@@ -12,6 +12,10 @@
 </head>
 
 <body>
+    <i class="icon-menu burger-button">
+        <div class="linea"></div>
+        <div class="linea"></div>
+        <div class="linea"></div></i>
     <header class="header">
         <div class="container">
             <figure class="logo">
@@ -72,15 +76,17 @@
         </div>
 
     </section>
-    <video class="HTML-video" src="video/f8.mp4" width=" " height=" " controls autoplay poster="YOUR-IMAGE.jpg">    </video>
+
     <div class="container">
         <h2 class="event-list-title">Más sobre mi experiencia</h2>
     </div>
+
     <section id="eventos" class="event-list">
         <div class="container">
             <article class="event">
                 <figure class="event-imageContainer">
-                    <img class="event-image" src="images/platzi-conf.jpg" width="500" />
+                    <video class="html-video" controls src="video/f8.mp4" width="1280" height="720" poster="YOUR-IMAGE.jpg">    </video>
+                    <!-- <img class="event-image" src="images/platzi-conf.jpg" width="500" /> -->
                 </figure>
                 <div class="event-detail">
                     <h3 class="event-title">PlatziConf México 2018</h3>
@@ -90,7 +96,9 @@
             </article>
             <article class="event">
                 <figure class="event-imageContainer">
-                    <img class="event-image" src="images/platzi-conf.jpg" width="500" />
+                    <div class="flexible-video">
+                        <iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/LoKvxCSZw5w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
                 </figure>
                 <div class="event-detail">
                     <h3 class="event-title">PlatziConf México 2018</h3>
