@@ -396,6 +396,12 @@ figure {
     /* font-size: 10px; */
 }
 
+.linea {
+    width: 2px;
+    height: 2px;
+    color: #f4fbff;
+}
+
 @media screen and (max-width:1024px) {
     .container {
         padding: 0 1em;
