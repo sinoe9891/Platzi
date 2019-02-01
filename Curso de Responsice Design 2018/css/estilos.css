@@ -389,7 +389,7 @@ figure {
     line-height: 40px;
     text-align: center;
     position: fixed;
-    z-index: 3;
+    z-index: 4;
     left: 5px;
     top: 5px;
     color: white;
@@ -476,9 +476,30 @@ figure {
     }
     .header a {
         justify-content: center;
+        height: 10px;
+        font-size: 2em;
+        /* text-decoration: underline; */
+        margin-bottom: 0.5em;
     }
     .header .logo {
         text-align: center;
+    }
+    .menu {
+        position: fixed;
+        background: rgba(5, 111, 255, 0.8);
+        z-index: 3;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 100vw;
+        /* height: 100vh; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        left: -100vw;
+    }
+    .menu.is-active {
+        left: 0;
     }
     .project {
         display: block;
