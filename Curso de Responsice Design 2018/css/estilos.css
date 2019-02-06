@@ -484,19 +484,22 @@ figure {
     .header .logo {
         text-align: center;
     }
+    /* Animar menu */
     .menu {
         position: fixed;
         background: rgba(5, 111, 255, 0.8);
         z-index: 3;
         top: 0;
-        left: 0;
-        bottom: 0;
+        /* left: 0; */
         width: 100vw;
         /* height: 100vh; */
+        bottom: 0;
         display: flex;
         align-items: center;
         justify-content: center;
+        /* ocultarlo a la izquierda */
         left: -100vw;
+        transition: .3s;
     }
     .menu.is-active {
         left: 0;

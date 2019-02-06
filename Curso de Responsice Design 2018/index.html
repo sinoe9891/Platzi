@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="es">
 
 <head>
@@ -6,13 +5,14 @@
     <title>Leonidas Esteban</title>
     <link rel="icon" type="image/png" href="images/favicon.png" />
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="fonts/icomoon.ttf"> -->
     <link rel="stylesheet" href="css/media.css" media="screen and (max-width:768px)">
     <link rel="stylesheet" href="css/estilos.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
-    <i class="icon-menu burger-button">
+    <i class="icon-menu burger-button" id="burguer-menu">
         <div class="linea"></div>
         <div class="linea"></div>
         <div class="linea"></div></i>
@@ -85,7 +85,7 @@
         <div class="container">
             <article class="event">
                 <figure class="event-imageContainer">
-                    <video class="html-video" controls src="video/f8.mp4" width="1280" height="720" poster="YOUR-IMAGE.jpg">    </video>
+                    <video class="html-video" controls src="video/f8.mp4" width="1280" height="720" poster="">    </video>
                     <!-- <img class="event-image" src="images/platzi-conf.jpg" width="500" /> -->
                 </figure>
                 <div class="event-detail">
@@ -155,6 +155,23 @@
             </div>
         </div>
     </footer>
+    <script>
+        const menu = document.querySelector('.menu');
+        const varburguerButton = document.querySelector('#burguer-menu')
+        varburguerButton.addEventListener('click', ocultarMostrar) // escuchar un evento
+
+        function ocultarMostrar() {
+            // condicion de menu si esta activo o no
+            // si contiene la clase is-active va remover la clase
+            if (menu.classList.contains('is-active')) {
+                menu.classList.remove('is-active');
+                // si no 
+            } else {
+                // activar la funcion para que agregue la clase
+                menu.classList.add('is-active');
+            }
+        }
+    </script>
 </body>
 
 </html>
