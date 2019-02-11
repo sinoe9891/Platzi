@@ -156,22 +156,37 @@
         </div>
     </footer>
     <script>
-        const menu = document.querySelector('.menu');
-        const varburguerButton = document.querySelector('#burguer-menu')
-        varburguerButton.addEventListener('click', ocultarMostrar) // escuchar un evento
+        var varburguerButton = document.querySelector('#burguer-menu')
+        varburguerButton.addEventListener('click', funcionLanzar);
 
-        function ocultarMostrar() {
-            // condicion de menu si esta activo o no
-            // si contiene la clase is-active va remover la clase
+        function funcionLanzar() {
+            var menu = document.querySelector('.menu');
             if (menu.classList.contains('is-active')) {
                 menu.classList.remove('is-active');
-                // si no 
             } else {
-                // activar la funcion para que agregue la clase
                 menu.classList.add('is-active');
             }
         }
+        var menu1 = document.querySelector('figure')
+            // usando classList, esta accede a las clases en este caso es la clase "logo"
+        console.log(menu1.classList)
     </script>
+    <!-- <script>
+        console.log(document.querySelector('.menu'))
+        var menuVar = document.querySelector('.menu')
+        console.log(menuVar)
+        var varburguerButton = document.querySelector('#burguer-menu')
+        varburguerButton.addEventListener('click', funcionLanzar);
+
+        function funcionLanzar() {
+            var menu = document.querySelector('.menu');
+            if (menu.classList.contains('is-active')) {
+                menu.classList.remove('is-active');
+            } else {
+                menu.classList.add('is-active');
+            }
+        }
+    </script> -->
 </body>
 
 </html>
