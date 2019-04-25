@@ -52,7 +52,9 @@ define( 'LOGGED_IN_SALT', '0-WEbiwTzQdnR rAbh5O;2I|a{h(@p$FzoI?C1C-8<2:qSvyD,7g<
 define( 'NONCE_SALT', 'ekd9W^5!kPj60JB5A);&O.UPC*be1:MquKNP^lw)#{+o~H$yOBzG,vb@lqj+.0O9' );
 	define('FS_METHOD','direct');
 /**#@-*/
+if ($_SERVER['HTTP_X_FORWARDED_PROTO'] == 'https')
 
+  $_SERVER['HTTPS']='on';
 /**
  * Prefijo de la base de datos de WordPress.
  *
